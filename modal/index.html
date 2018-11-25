@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .modal{
+      height: 280px;
+      width: 480px;
+      background-color: #F7EBE8;
+      position: fixed;
+      left: 25%;
+      top:15%;
+      display: none;
+    }
+
+    .modal__img{
+      position: relative;
+      margin: 10px 0px 0px 50px;
+      height: 195px;
+      width: 126px;
+    }
+
+    .modal__description{
+      background-color: rgba(221, 174, 168, 0.5);
+      width: 259px;
+      height: 100px;
+      float: right;
+      margin: 50px 0px 0px 0px;
+
+    }
+
+    .modal__form{
+      display: inline-block;
+      vertical-align: top;
+      width: 480px;
+      height: 55px;
+      position: relative;
+      background-color: rgba(221, 174, 168, 0.3);
+      margin-top: -5px;
+    }
+
+    .modal__form--input{
+      width: 258px;
+      height: 34px;
+      margin: 7px 0px 0px 25px;
+      border: none;
+      padding: 0px 10px ;
+    }
+    input::placeholder{
+      opacity: 1;
+      font-weight: normal;
+      font-size: 14px;
+      font-family: 'Arial';
+      color: #434242;
+    }
+
+    .modal__form--btn{
+     position: relative;
+     width: 101px;
+     height: 33px;
+     border: none;
+     background-color: #DDAEA8;
+     color: #fff;
+     font-weight: bold;
+     float: right;
+     margin: 7px 34px 0px 0px ;
+    }
+
+    .modal__description--text{
+      margin: 0px;
+      color:#434242;
+      font-weight: normal;
+      font-size: 20px;
+      font-family: 'Arial';
+      padding: 15px 0px 0px 25px;
+    }
+
+    .modal__description--text span{
+      font-weight: bold;
+
+    }
+
+    .modal__text{
+      font-size: 10px;
+      color: #5B5B5B;
+      float: right;
+      margin-top: -20px;
+
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="modal">
+    <img src="img1.png" alt="" class="modal__img">
+    <div class="modal__description">
+      <p class="modal__description--text">Подпишись на новости
+                  Гарантировано получи
+                  <span>100 грн</span>
+                  В подарок</p>
+    </div>
+    <p class="modal__text"> 100 грн скидка при заказе от 1000 грн </p>
+    <form id="form" class="modal__form"  method="post">
+      <input class="modal__form--input" type="email" name="email" value="" placeholder="Введите свой E-mail">
+      <button class="modal__form--btn" type="submit" name="button">Подписаться</button>
+    </form>
+
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
